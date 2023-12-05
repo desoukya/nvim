@@ -2,26 +2,28 @@
 
 1. arch -arm64 brew install neovim
 
-2. nvim —version
+2. arch -arm64 brew install jesseduffield/lazygit/lazygit
 
-3. add .vimrc https://github.com/desoukya/dot/blob/master/.vimrc
+3. nvim —version
 
-4. add .zshrc https://github.com/desoukya/dot/blob/master/.zshrc
+4. add .vimrc https://github.com/desoukya/dot/blob/master/.vimrc
 
-5. cd ~/.config
+5. add .zshrc https://github.com/desoukya/dot/blob/master/.zshrc
 
-6. git clone https://github.com/desoukya/nvim.git
+6. cd ~/.config
 
-7. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm6
+7. git clone https://github.com/desoukya/nvim.git
 
-8. Add tmux config: https://github.com/desoukya/dot/blob/master/.tmux.conf
+8. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm6
 
-9. Exit tmux config and run `st` to source the config
+9. Add tmux config: https://github.com/desoukya/dot/blob/master/.tmux.conf
+
+10. Exit tmux config and run `st` to source the config
    
-10. Enter the tmux config and run <tmux_leader>+I
+11. Enter the tmux config and run <tmux_leader>+I
 
-11. vim ~/.config/nvim/lua/desoukya/plugins-setup.lua and run <vim_leader>+s (should create /nvim/plugin/packer_compiled.lua)
+12. vim ~/.config/nvim/lua/desoukya/plugins-setup.lua and run <vim_leader>+s (should create /nvim/plugin/packer_compiled.lua)
 
-12. For intel, edit lua/desoukya/plugins_setup.lua and remove "arch -arm64". Also, comment those packages and install. Once packages removed, uncomment those packages with arch -arm64 excluded from run command and install.
+13. For intel, edit lua/desoukya/plugins_setup.lua and remove "arch -arm64". Also, comment those packages and install. Once packages removed, uncomment those packages with arch -arm64 excluded from run command and install.
 
-13. Enter vim and run ":Mason"
+14. Enter vim and run ":Mason"
