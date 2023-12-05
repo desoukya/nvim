@@ -6,6 +6,4 @@
 
 3. cd ~/.config
 
-4. mkdir nvim
-
-5. clone this repo
+4. git clone https://github.com/desoukya/nvim.git
