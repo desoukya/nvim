@@ -1,11 +1,19 @@
-#neovim setup
+## neovim setup
 
-ZSH Setup https://www.josean.com/posts/terminal-setup
-
+ZSH Setup
+```
+Reference:  https://www.josean.com/posts/terminal-setup
 - git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+- To Configure PowerLevel10K:
+```
+- p10k configure
+```
 
+- Steps
+```  
 1. arch -arm64 brew install neovim
 
 2. nvim —version
@@ -40,3 +48,4 @@ ZSH Setup https://www.josean.com/posts/terminal-setup
 17. For intel, edit lua/desoukya/plugins_setup.lua and remove "arch -arm64". Also, comment those packages and install. Once packages removed, uncomment those packages with arch -arm64 excluded from run command and install.
 
 18. Enter vim and run ":Mason"
+```
