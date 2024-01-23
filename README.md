@@ -16,7 +16,7 @@
 
 8. cd ~/.config
 
-9. git clone https://github.com/desoukya/nvim.git
+9. git clone https://github.com/desoukya/nvim.git ~/.config/nvim
 
 10. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
