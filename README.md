@@ -1,5 +1,7 @@
 #neovim setup
 
+ZSH Setup https://www.josean.com/posts/terminal-setup
+
 1. arch -arm64 brew install neovim
 
 2. nvim —version
