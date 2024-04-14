@@ -62,6 +62,7 @@ keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
@@ -81,3 +82,9 @@ keymap.set("n", "<leader>si", ":TypescriptOrganizeImport<CR>") -- sort import st
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+-- harpon
+keymap.set("n", "<leader>ha", require("harpoon.mark").add_file)
+keymap.set("n", "<leader>hd", require("harpoon.ui").nav_next)
+keymap.set("n", "<leader>hf", require("harpoon.ui").nav_prev)
+keymap.set("n", "<leader>hm", ":Telescope harpoon marks<cr>")
